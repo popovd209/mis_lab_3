@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mis_lab_2/services/api_services.dart';
-import 'package:mis_lab_2/widgets/joke_card.dart';
+import 'package:mis_lab_3/services/api_services.dart';
+import 'package:mis_lab_3/widgets/joke_card.dart';
 
 class JokesListScreen extends StatefulWidget {
   final String type;
