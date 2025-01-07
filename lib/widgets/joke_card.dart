@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class JokeCard extends StatelessWidget {
@@ -5,6 +6,11 @@ class JokeCard extends StatelessWidget {
   final String punchline;
 
   const JokeCard({super.key, required this.setup, required this.punchline});
+
+  Future<void> addToFavorites() async {
+    final favorites = FirebaseFirestore.instance.collection('favorites');
+    await favorites.add({'setup': setup, 'punchline': punchline});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +41,11 @@ class JokeCard extends StatelessWidget {
                 fontStyle: FontStyle.italic,
                 color: Colors.grey[700],
               ),
+            ),
+            IconButton(
+              icon: const Icon(Icons.favorite_border),
+              onPressed: addToFavorites,
+              tooltip: 'Add to Favorites',
             ),
           ],
         ),

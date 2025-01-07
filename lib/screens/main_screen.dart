@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../services/api_services.dart';
 import 'jokes_list_screen.dart';
 import 'random_joke_screen.dart';
+import 'favorite_jokes_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -28,6 +29,17 @@ class _MainScreenState extends State<MainScreen> {
           },
           tooltip: 'Random Joke',
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.favorite),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FavoritesScreen()),
+              );
+            },
+          ),
+        ],
       ),
       body: FutureBuilder<List<String>>(
         future: ApiService.fetchJokeTypes(),
