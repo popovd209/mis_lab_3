@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "515532083039",
+    "project_id": "popovd-mis-lab-3",
+    "storage_bucket": "popovd-mis-lab-3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515532083039:android:7865d34a051835686fb0ea",
+        "android_client_info": {
+          "package_name": "mis.lab.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXrFo2k0EiJIQCBw4vbG_m4MxEsjJj_h0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
