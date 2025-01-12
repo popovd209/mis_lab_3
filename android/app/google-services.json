@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:515532083039:android:7865d34a051835686fb0ea",
+        "mobilesdk_app_id": "1:515532083039:android:76636f01ea40ecda6fb0ea",
         "android_client_info": {
-          "package_name": "mis.lab.app"
+          "package_name": "com.example.mis_lab_3"
         }
       },
       "oauth_client": [],

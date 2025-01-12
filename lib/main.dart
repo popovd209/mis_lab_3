@@ -49,7 +49,7 @@ void main() async {
     'Joke of the Day',
     'Here is your daily joke!',
     16,
-    48, 
+    28, 
   );
 
   runApp(const MyApp());
